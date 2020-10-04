@@ -1,0 +1,17 @@
+/* Done Projects */
+.done-projects {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    i {
+        padding: 0;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+
+}

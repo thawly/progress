@@ -1,0 +1,23 @@
+// Bars
+.progress {
+    background: $primary-color;
+    height: 5px;
+    width: 100%;
+}
+
+.progress-green {
+    background: $success-light;
+    height: 5px;
+    width: 100%;
+}
+
+// Progress Bar Color
+.bar-success {
+    background: $success-dark;
+    height: inherit;
+}
+
+.bar-active {
+    background: $active-dark;
+    height: inherit;
+}

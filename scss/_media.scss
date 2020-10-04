@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+
+    /* Utility */
+    #courses-report ul li,
+    #projects-report .details li {
+        justify-self: center;
+        text-align: center;
+    }
+
+    #courses-report {
+        ul {
+            margin-top: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    #courses-report ul li i,
+    #projects-report .details li i {
+        display: none;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #555555;
+    }
+
+    .month {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #444444;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bottom {
+        margin-top: 0.5rem;
+    }
+
+    // Header
+    #main-header {
+
+        .container {
+
+            .header-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    font-family: 'Josefin Sans', sans-serif;
+                    letter-spacing: 0.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 800;
+                }
+
+                .profile img {
+                    display: none;
+                }
+
+                .user {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    // Content
+    .container {
+        margin: 1.5rem;
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    // Courses
+    #courses-report {
+        padding: 1.5rem 2rem 0;
+        border-radius: 30px;
+        box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1);
+
+        ul li h3 {
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+
+        // Active Courses
+        #active-courses {
+            grid-template-columns: 1fr;
+            grid-gap: 1.5rem;
+
+            .active-course {
+                height: inherit;
+
+                .meta {
+                    font-size: 0.75rem;
+                    margin-bottom: 2rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                h4 {
+                    font-size: 0.95rem;
+                }
+
+                h6 {
+                    font-size: 0.8rem;
+                    padding: 1rem 0;
+                }
+
+                .status {
+                    font-size: 0.8rem;
+                }
+
+                .deadline {
+                    font-size: 0.75rem;
+                    padding: 0.5rem 1.5rem;
+                }
+            }
+        }
+
+        // Upcoming Courses
+        #upcoming-courses {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+
+            .upcoming-course {
+                grid-template-rows: 7fr 1fr;
+                height: inherit;
+                padding: 1rem 0.5rem;
+
+                .content {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+
+                .meta {
+                    font-size: 0.7rem;
+                }
+
+                .btn-upcoming {
+                    font-size: 0.8rem;
+                    padding: 0.5rem 2rem;
+                }
+            }
+        }
+
+        // Done Courses
+        #done-courses {
+            grid-template-columns: 1fr;
+            grid-gap: 1.25rem;
+
+            .done-course {
+
+                .title {
+                    letter-spacing: 0;
+                    font-size: 1rem;
+                }
+
+                .done-btn {
+                    font-size: 0.7rem;
+                    width: 60%;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        // Stopped Courses
+        #stopped-courses {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+
+            .stopped-course {
+                padding: 0.8rem 0.5rem;
+                box-shadow: -2px 3px rgba(0, 0, 0, 0.15);
+
+                .stopped-btn {
+                    font-size: 0.6rem;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    // Projects
+    #projects-report {
+
+        margin: auto 0;
+        padding: 2.5rem 0.5rem;
+
+        #projects {
+            .details {
+                margin-top: 1.5rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .projects {
+                .title {
+                    margin-bottom: 1rem;
+                }
+
+                .details {
+                    margin-bottom: 0;
+                }
+
+                // Active Projects
+                .active-project {
+                    h2 {
+                        font-size: 1.7rem;
+                    }
+
+                    h4 {
+                        font-size: 0.9rem;
+                    }
+
+                    h6 {
+                        font-size: 1rem;
+                    }
+
+                    .status {
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+
+                    .deadline {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                // Pending Projects
+                .pending-projects {
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+
+                // Done Projects
+                .done-projects {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .container {
+        margin: 0;
+    }
+
+    #courses-report {
+        padding: 1.5rem;
+        border-radius: 0;
+    }
+
+    #main-header {
+        margin: 2rem auto;
+
+        .container {
+            padding-top: 0;
+        }
+    }
+
+    // Courses
+    #courses-report {
+
+        // Active Courses
+        #active-courses {
+            grid-gap: 2rem;
+        }
+
+        // Upcoming Courses
+        #upcoming-courses {
+            padding-top: 0.5rem;
+            grid-gap: 2rem;
+        }
+    }
+
+    // Projects
+    #projects-report {
+        margin-bottom: 3rem;
+        margin: auto 1rem;
+
+        #projects {
+            .details {
+                margin-top: 1.5rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .projects {
+
+                .title {
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            // Active Projects
+            .active-project {
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+
+                h6 {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                }
+
+                .status {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                }
+
+                .deadline {
+                    font-size: 0.75rem;
+                }
+            }
+
+            // Pending Projects
+            .pending-projects {
+                li {
+                    font-size: 0.95rem;
+                }
+
+                i {
+                    padding: 0;
+                }
+            }
+
+            // Done Projects
+            .done-projects {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        font-size: 0.95rem;
+                    }
+
+                    i {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

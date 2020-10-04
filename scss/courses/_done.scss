@@ -1,0 +1,53 @@
+/* Done Courses */
+#courses-report {
+    #done-courses {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        .done-course {
+            display: flex;
+            flex-direction: column;
+            background: $card-color;
+            border-radius: 20px;
+            text-align: left;
+            padding: 1rem;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+
+            .meta {
+                text-align: left;
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #333333;
+            }
+
+            .title {
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+
+            .intructor {
+                color: #666666;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            .tag {
+                font-weight: 700;
+                color: $success-dark;
+                margin-bottom: 0.75rem;
+            }
+
+            .done-btn {
+                font-size: 0.75rem;
+                font-weight: 500;
+                width: 25%;
+                border: none;
+                background: $success-dark;
+                color: #f4f4f4;
+                padding: 0.5rem 1rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}

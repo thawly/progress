@@ -1,0 +1,24 @@
+// Cards
+.active {
+    background: $active-light;
+}
+
+.wait {
+    background: $wait-light;
+}
+
+.success {
+    background: $success-light;
+}
+
+.danger {
+    background: $danger-light;
+}
+
+#active {
+    color: $active-dark;
+}
+
+#wait {
+    color: $wait-dark;
+}

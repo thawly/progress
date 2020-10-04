@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Utilities */
+.container {
+  max-width: 1250px;
+  margin: 2rem auto; }
+
+ul {
+  list-style: none;
+  display: flex; }
+  ul ul li i {
+    padding: 0 2rem; }
+
+.month {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444444; }
+
+.heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #555555; }
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+#courses .heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #555555; }
+
+.py-1 {
+  padding: 1.5rem 0; }
+.py-2 {
+  padding: 2rem 0; }
+.py-3 {
+  padding: 3rem 0; }
+
+/* Main Header */
+#main-header .container {
+  padding: 0 2rem 0 2.5rem; }
+  #main-header .container .header-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; }
+    #main-header .container .header-container h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700; }
+    #main-header .container .header-container div {
+      justify-self: end;
+      display: flex;
+      align-items: center; }
+    #main-header .container .header-container .profile img {
+      width: 55px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      box-shadow: -1px 1px rgba(0, 0, 0, 0.4); }
+
+.progress {
+  background: #f3f8ff;
+  height: 5px;
+  width: 100%; }
+
+.progress-green {
+  background: #aeddd1;
+  height: 5px;
+  width: 100%; }
+
+.bar-success {
+  background: #019772;
+  height: inherit; }
+
+.bar-active {
+  background: #ff7171;
+  height: inherit; }
+
+/* Courses: Top Bar */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+#courses-report ul {
+  margin: 3rem 0 0; }
+  #courses-report ul li h3 {
+    font-size: 1.2rem;
+    font-weight: 800; }
+  #courses-report ul li i {
+    padding: 0 3rem; }
+  #courses-report ul li:first-child {
+    padding-left: 0; }
+
+.active {
+  background: #ffc7c7; }
+
+.wait {
+  background: #8785a2; }
+
+.success {
+  background: #aeddd1; }
+
+.danger {
+  background: #e75d6f; }
+
+#active {
+  color: #ff7171; }
+
+#wait {
+  color: #5d599b; }
+
+/* Active Courses */
+#courses-report {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2.5rem 1rem; }
+  #courses-report #active-courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; }
+  #courses-report .active-course {
+    position: relative;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.15); }
+    #courses-report .active-course .meta {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 3.5rem; }
+    #courses-report .active-course h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding-bottom: 0.25rem; }
+    #courses-report .active-course h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem; }
+    #courses-report .active-course h6 {
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 2rem 0 1rem; }
+    #courses-report .active-course .status {
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.75rem 0; }
+    #courses-report .active-course .deadline {
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: none;
+      background: #fafafa;
+      padding: 0.5rem 1.75rem;
+      border-radius: 20px; }
+
+/* Upcoming Courses */
+#courses-report #upcoming-courses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #courses-report #upcoming-courses .upcoming-course {
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    background: #f9f9f9;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 2px 1.5px rgba(0, 0, 0, 0.15); }
+    #courses-report #upcoming-courses .upcoming-course .text {
+      display: grid;
+      grid-template-rows: 0.55fr 0.25fr;
+      justify-content: center; }
+    #courses-report #upcoming-courses .upcoming-course .content {
+      align-items: center; }
+      #courses-report #upcoming-courses .upcoming-course .content h4 {
+        color: #5d599b; }
+    #courses-report #upcoming-courses .upcoming-course .meta {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #333333; }
+    #courses-report #upcoming-courses .upcoming-course .btn-upcoming {
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+      background: #5d599b;
+      color: #f4f4f4;
+      padding: 0.5rem 2.5rem;
+      border-radius: 10px; }
+
+/* Done Courses */
+#courses-report #done-courses {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem; }
+  #courses-report #done-courses .done-course {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border-radius: 20px;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15); }
+    #courses-report #done-courses .done-course .meta {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #333333; }
+    #courses-report #done-courses .done-course .title {
+      font-size: 1.3rem;
+      font-weight: 700; }
+    #courses-report #done-courses .done-course .intructor {
+      color: #666666;
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    #courses-report #done-courses .done-course .tag {
+      font-weight: 700;
+      color: #019772;
+      margin-bottom: 0.75rem; }
+    #courses-report #done-courses .done-course .done-btn {
+      font-size: 0.75rem;
+      font-weight: 500;
+      width: 25%;
+      border: none;
+      background: #019772;
+      color: #f4f4f4;
+      padding: 0.5rem 1rem;
+      border-radius: 10px; }
+
+/* Stopped Course */
+#courses-report #stopped-courses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #courses-report #stopped-courses .stopped-course {
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    background: #e75d6f;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.8rem;
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.15); }
+    #courses-report #stopped-courses .stopped-course .meta {
+      text-align: center;
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: #ffffff; }
+    #courses-report #stopped-courses .stopped-course .title {
+      font-size: 0.75rem;
+      font-weight: 800; }
+    #courses-report #stopped-courses .stopped-course .intructor {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #831221; }
+    #courses-report #stopped-courses .stopped-course .stopped-btn {
+      font-size: 0.7rem;
+      font-weight: 700;
+      border: none;
+      background: #df213b;
+      color: #ffd8ce;
+      padding: 0.25rem 1rem;
+      border-radius: 10px; }
+
+/* Projects: Top Bar */
+#projects-report {
+  padding: 2.5rem 2rem; }
+  #projects-report #projects .details {
+    display: flex;
+    margin: 3rem 0 4rem; }
+    #projects-report #projects .details li h3 {
+      font-size: 1.2rem;
+      font-weight: 800; }
+    #projects-report #projects .details li i {
+      padding: 0 1.3rem; }
+    #projects-report #projects .details li:first-child {
+      padding-left: 0; }
+
+/* Active Projects */
+.active-project {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem; }
+  .active-project h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 0.25rem; }
+  .active-project h4 {
+    font-size: 1rem;
+    font-weight: 400; }
+  .active-project h6 {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2rem 0 1rem; }
+  .active-project .status {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 0; }
+  .active-project .deadline {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+    background: #019772;
+    color: #ffffff;
+    padding: 0.5rem 1.75rem;
+    border-radius: 20px; }
+
+/* Pending Projects */
+.pending-projects ul {
+  display: inline; }
+  .pending-projects ul i {
+    padding: 0; }
+  .pending-projects ul .title {
+    margin-bottom: 1rem; }
+
+/* Done Projects */
+.done-projects ul {
+  display: flex;
+  flex-direction: column; }
+.done-projects i {
+  padding: 0; }
+.done-projects .title {
+  margin-bottom: 1rem; }
+
+body {
+  background: #f3f8ff;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.3; }
+
+/* Content */
+.content-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 0.5rem; }
+
+/* HR */
+.rule {
+  border: dotted 5px #555555;
+  border-bottom: none;
+  margin: 2rem 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+@media (max-width: 450px) {
+  /* Utility */
+  #courses-report ul li,
+  #projects-report .details li {
+    justify-self: center;
+    text-align: center; }
+
+  #courses-report ul {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center; }
+
+  #courses-report ul li i,
+  #projects-report .details li i {
+    display: none; }
+
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555555; }
+
+  .month {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #444444; }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .bottom {
+    margin-top: 0.5rem; }
+
+  #main-header .container .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #main-header .container .header-container h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      letter-spacing: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 800; }
+    #main-header .container .header-container .profile img {
+      display: none; }
+    #main-header .container .header-container .user {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 500; }
+
+  .container {
+    margin: 1.5rem; }
+    .container .content-container {
+      display: flex;
+      flex-direction: column; }
+
+  #courses-report {
+    padding: 1.5rem 2rem 0;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1); }
+    #courses-report ul li h3 {
+      font-size: 1.1rem;
+      font-weight: 800; }
+    #courses-report #active-courses {
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem; }
+      #courses-report #active-courses .active-course {
+        height: inherit; }
+        #courses-report #active-courses .active-course .meta {
+          font-size: 0.75rem;
+          margin-bottom: 2rem; }
+        #courses-report #active-courses .active-course h3 {
+          font-size: 1rem; }
+        #courses-report #active-courses .active-course h4 {
+          font-size: 0.95rem; }
+        #courses-report #active-courses .active-course h6 {
+          font-size: 0.8rem;
+          padding: 1rem 0; }
+        #courses-report #active-courses .active-course .status {
+          font-size: 0.8rem; }
+        #courses-report #active-courses .active-course .deadline {
+          font-size: 0.75rem;
+          padding: 0.5rem 1.5rem; }
+    #courses-report #upcoming-courses {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem; }
+      #courses-report #upcoming-courses .upcoming-course {
+        grid-template-rows: 7fr 1fr;
+        height: inherit;
+        padding: 1rem 0.5rem; }
+        #courses-report #upcoming-courses .upcoming-course .content h3 {
+          font-size: 1rem; }
+        #courses-report #upcoming-courses .upcoming-course .meta {
+          font-size: 0.7rem; }
+        #courses-report #upcoming-courses .upcoming-course .btn-upcoming {
+          font-size: 0.8rem;
+          padding: 0.5rem 2rem; }
+    #courses-report #done-courses {
+      grid-template-columns: 1fr;
+      grid-gap: 1.25rem; }
+      #courses-report #done-courses .done-course .title {
+        letter-spacing: 0;
+        font-size: 1rem; }
+      #courses-report #done-courses .done-course .done-btn {
+        font-size: 0.7rem;
+        width: 60%;
+        border-radius: 8px; }
+    #courses-report #stopped-courses {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem; }
+      #courses-report #stopped-courses .stopped-course {
+        padding: 0.8rem 0.5rem;
+        box-shadow: -2px 3px rgba(0, 0, 0, 0.15); }
+        #courses-report #stopped-courses .stopped-course .stopped-btn {
+          font-size: 0.6rem;
+          border-radius: 8px; }
+
+  #projects-report {
+    margin: auto 0;
+    padding: 2.5rem 0.5rem; }
+    #projects-report #projects .details {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      align-items: center; }
+    #projects-report #projects .projects .title {
+      margin-bottom: 1rem; }
+    #projects-report #projects .projects .details {
+      margin-bottom: 0; }
+    #projects-report #projects .projects .active-project h2 {
+      font-size: 1.7rem; }
+    #projects-report #projects .projects .active-project h4 {
+      font-size: 0.9rem; }
+    #projects-report #projects .projects .active-project h6 {
+      font-size: 1rem; }
+    #projects-report #projects .projects .active-project .status {
+      font-size: 1rem;
+      font-weight: 400; }
+    #projects-report #projects .projects .active-project .deadline {
+      font-size: 0.8rem; }
+    #projects-report #projects .projects .pending-projects li {
+      font-size: 1rem; }
+    #projects-report #projects .projects .done-projects ul {
+      display: flex;
+      flex-direction: column; }
+      #projects-report #projects .projects .done-projects ul li {
+        font-size: 1rem; } }
+@media (max-width: 320px) {
+  .container {
+    margin: 0; }
+
+  #courses-report {
+    padding: 1.5rem;
+    border-radius: 0; }
+
+  #main-header {
+    margin: 2rem auto; }
+    #main-header .container {
+      padding-top: 0; }
+
+  #courses-report #active-courses {
+    grid-gap: 2rem; }
+  #courses-report #upcoming-courses {
+    padding-top: 0.5rem;
+    grid-gap: 2rem; }
+
+  #projects-report {
+    margin-bottom: 3rem;
+    margin: auto 1rem; }
+    #projects-report #projects .details {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      align-items: center; }
+    #projects-report #projects .projects .title {
+      margin-bottom: 1rem;
+      font-size: 1.2rem; }
+    #projects-report #projects .active-project h2 {
+      font-size: 1.2rem; }
+    #projects-report #projects .active-project h4 {
+      font-size: 0.8rem; }
+    #projects-report #projects .active-project h6 {
+      font-size: 0.9rem;
+      font-weight: 400; }
+    #projects-report #projects .active-project .status {
+      font-size: 0.9rem;
+      font-weight: 400; }
+    #projects-report #projects .active-project .deadline {
+      font-size: 0.75rem; }
+    #projects-report #projects .pending-projects li {
+      font-size: 0.95rem; }
+    #projects-report #projects .pending-projects i {
+      padding: 0; }
+    #projects-report #projects .done-projects ul {
+      display: flex;
+      flex-direction: column; }
+      #projects-report #projects .done-projects ul li {
+        font-size: 0.95rem; }
+      #projects-report #projects .done-projects ul i {
+        padding: 0; } }
+
+/*# sourceMappingURL=main.css.map */

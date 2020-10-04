@@ -1,0 +1,46 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Variables
+@import 'variables';
+@import 'utilities';
+@import 'header';
+@import 'progress';
+
+// Courses
+@import 'courses/top-bar';
+@import 'courses/cards';
+@import 'courses/active';
+@import 'courses/upcoming';
+@import 'courses/done';
+@import 'courses/stopped';
+
+// Projects
+@import 'projects/top-bar';
+@import 'projects/active';
+@import 'projects/pending';
+@import 'projects/done';
+
+
+body {
+    background: $primary-color;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.3;
+}
+
+/* Content */
+.content-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0.5rem;
+}
+
+/* HR */
+.rule {
+    border: dotted 5px #555555;
+    border-bottom: none;
+    margin: 2rem 0;
+}
+
+@import "media";

@@ -1,0 +1,27 @@
+/* Projects: Top Bar */
+#projects-report {
+    padding: 2.5rem 2rem;
+
+    #projects {
+        .details {
+            display: flex;
+            margin: 3rem 0 4rem;
+
+            li {
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                }
+
+                i {
+                    padding: 0 1.3rem;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

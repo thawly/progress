@@ -1,0 +1,31 @@
+/* Main Header */
+#main-header {
+    .container {
+        padding: 0 2rem 0 2.5rem;
+
+        .header-container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+            h1 {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+            }
+
+            div {
+                justify-self: end;
+                display: flex;
+                align-items: center;
+            }
+
+            .profile {
+                img {
+                    width: 55px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                    box-shadow: -1px 1px rgba(0, 0, 0, 0.4);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/* Upcoming Courses */
+#courses-report {
+    #upcoming-courses {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+
+        .upcoming-course {
+            display: grid;
+            grid-template-rows: 8fr 1fr;
+            background: $card-color;
+            border-radius: 20px;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 0 2px 1.5px rgba(0, 0, 0, 0.15);
+
+            .text {
+                display: grid;
+                grid-template-rows: 0.55fr 0.25fr;
+                justify-content: center;
+            }
+
+            .content {
+                align-items: center;
+
+                h4 {
+                    color: $wait-dark;
+                }
+            }
+
+            .meta {
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #333333;
+            }
+
+            .btn-upcoming {
+                font-size: 0.9rem;
+                font-weight: 500;
+                border: none;
+                background: $wait-dark;
+                color: #f4f4f4;
+                padding: 0.5rem 2.5rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
